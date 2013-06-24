@@ -18,6 +18,9 @@
 		3F38C4CC1778B6100006439E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F38C4CB1778B6100006439E /* Default-568h@2x.png */; };
 		3F38C4CF1778B6100006439E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F38C4CD1778B6100006439E /* MainStoryboard.storyboard */; };
 		3F38C4D21778B6100006439E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F38C4D11778B6100006439E /* ViewController.m */; };
+		3F38C4E31778CA310006439E /* scissors.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F38C4E01778CA310006439E /* scissors.jpg */; };
+		3F38C4E41778CA310006439E /* paper.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F38C4E11778CA310006439E /* paper.jpeg */; };
+		3F38C4E51778CA310006439E /* rock.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F38C4E21778CA310006439E /* rock.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		3F38C4CE1778B6100006439E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		3F38C4D01778B6100006439E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3F38C4D11778B6100006439E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3F38C4E01778CA310006439E /* scissors.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scissors.jpg; sourceTree = "<group>"; };
+		3F38C4E11778CA310006439E /* paper.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = paper.jpeg; sourceTree = "<group>"; };
+		3F38C4E21778CA310006439E /* rock.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rock.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,9 @@
 				3F38C4CD1778B6100006439E /* MainStoryboard.storyboard */,
 				3F38C4D01778B6100006439E /* ViewController.h */,
 				3F38C4D11778B6100006439E /* ViewController.m */,
+				3F38C4E01778CA310006439E /* scissors.jpg */,
+				3F38C4E11778CA310006439E /* paper.jpeg */,
+				3F38C4E21778CA310006439E /* rock.jpeg */,
 				3F38C4BC1778B60F0006439E /* Supporting Files */,
 			);
 			path = HelloWorld;
@@ -163,6 +172,9 @@
 				3F38C4CA1778B6100006439E /* Default@2x.png in Resources */,
 				3F38C4CC1778B6100006439E /* Default-568h@2x.png in Resources */,
 				3F38C4CF1778B6100006439E /* MainStoryboard.storyboard in Resources */,
+				3F38C4E31778CA310006439E /* scissors.jpg in Resources */,
+				3F38C4E41778CA310006439E /* paper.jpeg in Resources */,
+				3F38C4E51778CA310006439E /* rock.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

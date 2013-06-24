@@ -9,10 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UILabel *storyLabel;
+{
+    IBOutlet UIImageView *player1Image;
+    
+    IBOutlet UIImageView *player2Image;
+   
+}
+- (IBAction)change:(id)sender;
 
-@property (weak, nonatomic) IBOutlet UILabel *label;
-- (IBAction)buttonPressed:(id)sender;
-- (IBAction)storyButton:(id)sender;
+
 
 @end

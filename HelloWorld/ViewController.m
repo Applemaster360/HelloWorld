@@ -13,8 +13,7 @@
 @end
 
 @implementation ViewController
-@synthesize label;
-@synthesize storyLabel;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -26,13 +25,16 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)buttonPressed:(id)sender{
-    label.text = @"Hello Friend";
-}
 
-- (IBAction)storyButton:(id)sender {
-    storyLabel.text = @"All about how my life got";
-    label.text = @"Flipped turned upside down";
-    
+
+- (IBAction)change:(id)sender {
+    UIButton *buttonPressed = (UIButton *)sender;
+    if(buttonPressed == redButton){
+        [self.view setBackgroundColor:[UIColor redColor]];
+        colorLabel.text = @"The Color is red";
+        }
+    if (buttonPressed == orangeButton) {
+        [self.view setBackgroundColor:[UIColor orangeColor]];
+    }
 }
 @end
