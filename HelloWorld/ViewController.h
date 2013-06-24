@@ -16,9 +16,12 @@
    
 }
 
-- (IBAction)rockButtonPressed:(id)sender;
+//- (IBAction)rockButtonPressed:(id)sender;
 - (IBAction)paperButtonPressed:(id)sender;
 - (IBAction)scissorButtonPressed:(id)sender;
+- (void) gameOver:(int) winner;
+- (void) updateLabel: (UILabel *)label withText:(NSString *)text;
+- (int) determineComputerAction;
 
 
 
