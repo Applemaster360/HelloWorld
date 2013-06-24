@@ -12,28 +12,81 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="rock.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="TGB-HH-0x6">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="paper.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="TGB-HH-0x6">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="329" id="fbD-DC-U8q"/>
-                                    <constraint firstAttribute="height" constant="252" id="ho4-QS-UvG"/>
+                                    <constraint firstAttribute="width" constant="233" id="jfn-3r-Ghn"/>
+                                    <constraint firstAttribute="height" constant="173" id="lQV-gA-Qhy"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="paper.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="DIk-vz-UUi">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="rock.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="DIk-vz-UUi">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="279" id="0Cn-h3-Scx"/>
-                                    <constraint firstAttribute="width" constant="341" id="1Sw-h8-0Tv"/>
+                                    <constraint firstAttribute="height" constant="191" id="NvB-NF-mgc"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ixf-fw-7N9">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Rock ">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="rockButtonPressed:" destination="2" eventType="touchUpInside" id="3R4-9Z-3qD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4XN-9F-qs8">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Paper">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="paperButtonPressed:" destination="2" eventType="touchUpInside" id="bhe-Gq-LvM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sf0-Vq-Skd">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Scissors">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="scissorButtonPressed:" destination="2" eventType="touchUpInside" id="Zn8-XW-zJR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Fight!!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DE3-E8-OoG">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="TGB-HH-0x6" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="6NK-mP-tUr"/>
-                            <constraint firstItem="TGB-HH-0x6" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="Kxo-ER-cf8"/>
-                            <constraint firstItem="TGB-HH-0x6" firstAttribute="top" secondItem="DIk-vz-UUi" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="jEP-0d-hR2"/>
-                            <constraint firstItem="TGB-HH-0x6" firstAttribute="leading" secondItem="DIk-vz-UUi" secondAttribute="leading" type="default" id="kX5-Xz-yNP"/>
+                            <constraint firstItem="Ixf-fw-7N9" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="4Sa-gl-44t"/>
+                            <constraint firstItem="TGB-HH-0x6" firstAttribute="top" secondItem="3" secondAttribute="top" constant="36" id="5g4-He-bdp"/>
+                            <constraint firstItem="DE3-E8-OoG" firstAttribute="top" secondItem="3" secondAttribute="top" constant="223" id="B67-5w-hDg"/>
+                            <constraint firstItem="Ixf-fw-7N9" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="13" id="Eq1-9i-mKL"/>
+                            <constraint firstItem="TGB-HH-0x6" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="JYx-3W-zxh"/>
+                            <constraint firstItem="DIk-vz-UUi" firstAttribute="top" secondItem="3" secondAttribute="top" constant="259" id="MEG-5B-QfK"/>
+                            <constraint firstItem="4XN-9F-qs8" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="115" id="Qll-XK-Rz7"/>
+                            <constraint firstItem="4XN-9F-qs8" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="Qmu-V3-LEV"/>
+                            <constraint firstAttribute="trailing" secondItem="sf0-Vq-Skd" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="dgD-he-UTM"/>
+                            <constraint firstItem="TGB-HH-0x6" firstAttribute="centerX" secondItem="DE3-E8-OoG" secondAttribute="centerX" type="default" id="hgV-HE-JwA"/>
+                            <constraint firstItem="TGB-HH-0x6" firstAttribute="leading" secondItem="DIk-vz-UUi" secondAttribute="leading" type="default" id="j0E-tt-LzS"/>
+                            <constraint firstItem="TGB-HH-0x6" firstAttribute="trailing" secondItem="DIk-vz-UUi" secondAttribute="trailing" type="default" id="tmf-hQ-leZ"/>
+                            <constraint firstItem="sf0-Vq-Skd" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="uSo-Da-eTG"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="option" destination="DE3-E8-OoG" id="zem-EP-x1P"/>
                         <outlet property="player1Image" destination="DIk-vz-UUi" id="AR1-mC-qn8"/>
                         <outlet property="player2Image" destination="DIk-vz-UUi" id="UGU-rE-kaG"/>
                     </connections>
@@ -53,7 +106,10 @@
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
-                <relationship kind="action" name="change:"/>
+                <relationship kind="action" name="paperButtonPressed:"/>
+                <relationship kind="action" name="rockButtonPressed:"/>
+                <relationship kind="action" name="scissorButtonPressed:"/>
+                <relationship kind="outlet" name="option" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="player1Image" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="player2Image" candidateClass="UIImageView"/>
             </relationships>

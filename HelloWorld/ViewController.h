@@ -11,11 +11,14 @@
 @interface ViewController : UIViewController
 {
     IBOutlet UIImageView *player1Image;
-    
     IBOutlet UIImageView *player2Image;
+    IBOutlet UILabel *option;
    
 }
-- (IBAction)change:(id)sender;
+
+- (IBAction)rockButtonPressed:(id)sender;
+- (IBAction)paperButtonPressed:(id)sender;
+- (IBAction)scissorButtonPressed:(id)sender;
 
 
 

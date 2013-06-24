@@ -13,7 +13,7 @@
 @end
 
 @implementation ViewController
-
+//@synthesize option;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -27,14 +27,21 @@
 }
 
 
-- (IBAction)change:(id)sender {
-    UIButton *buttonPressed = (UIButton *)sender;
-    if(buttonPressed == redButton){
-        [self.view setBackgroundColor:[UIColor redColor]];
-        colorLabel.text = @"The Color is red";
-        }
-    if (buttonPressed == orangeButton) {
-        [self.view setBackgroundColor:[UIColor orangeColor]];
-    }
+
+- (IBAction)rockButtonPressed:(id)sender {
+    player1Image.image = [UIImage imageNamed:@"rock.jpeg"];
+    option.text = @"You chose Rock!!"; 
 }
+
+- (IBAction)paperButtonPressed:(id)sender {
+     player1Image.image = [UIImage imageNamed:@"paper.jpeg"];
+    option.text = @"You chose paper!!"; 
+}
+
+- (IBAction)scissorButtonPressed:(id)sender {
+    
+    player1Image.image = [UIImage imageNamed:@"scissors.jpg"];
+    option.text = @"You chose scissors!!"; 
+}
+
 @end
