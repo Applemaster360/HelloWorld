@@ -13,7 +13,15 @@
 @end
 
 @implementation ViewController
+
+@synthesize playerScore = _playerScore;
+@synthesize playerScoreLabel = _playerScoreLabel;
+@synthesize computerScoreLabel = _computerScoreLabel;
+@synthesize tiesLabel = _tiesLabel;
+@synthesize computerScore = _computerScore;
+@synthesize ties = _ties;
 //@synthesize option;
+ 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -50,7 +58,7 @@
     }
     else if ([button.titleLabel.text isEqual:@"Paper"]){
         player1Image.image = [UIImage imageNamed:@"paper.jpeg"];
-        playerChoice = 1; 
+        playerChoice = 1;
         
     }
     else if ([button.titleLabel.text isEqual:@"Scissors"]){
@@ -60,21 +68,45 @@
         
     }
     computerChoice = [self determineComputerAction];
-    NSLog(@"%d",computerChoice); 
+    if (computerChoice == 0){
+        player2Image.image = [UIImage imageNamed:@"rock.jpeg"];
+    }
+    else if (computerChoice == 1) {
+        player2Image.image = [UIImage imageNamed:@"paper.jpeg"];
+    }
+    else {
+        player2Image.image = [UIImage imageNamed:@"Scissors.jpg"];
+    }
+    
+    NSLog(@"%d",computerChoice);
+    
+    [self gameOver:[self determineWinner:playerChoice withComputer:computerChoice]];
 }
 
 - (void) gameOver:(int)winner{
+    
     if (winner == 1) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Game Over" message:@"Player One Wins" delegate:self cancelButtonTitle:@"Okay" otherButtonTitles: nil];
         [alert show];
+        self.playerScore += 1;
 
     }
     else if (winner == 2){
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Game Over" message:@"Player One Wins" delegate:self cancelButtonTitle:@"Okay" otherButtonTitles: nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Game Over" message:@"Computer Wins" delegate:self cancelButtonTitle:@"Okay" otherButtonTitles: nil];
         [alert show];
+        self.computerScore += 1;
         
     }
+    else if (winner == 0){
+
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Game Over" message:@"It's a tie!" delegate:self cancelButtonTitle:@"Okay" otherButtonTitles: nil];
+            [alert show];
+        self.ties += 1;
+    }
+        
+    [self updateScore];
 }
+
 - (void) updateLabel: (UILabel *)label withText:(NSString *)text{
     label.text = text;
 }
@@ -89,6 +121,23 @@
     {
         return 1; 
     }
+    else if ( (player1 == 0 && player2 == 0) || (player1 == 1 && player1 ==  1) || (player1 ==2 && player2 == 2))  {
+        return 0;
     
+    }
+    else {
+        return 2;
+        
+    }
 }
+-(void)updateScore {
+
+    self.playerScoreLabel.text = [[NSString alloc] initWithFormat:@"Player Score: %d", self.playerScore];
+self.computerScoreLabel.text = [[NSString alloc] initWithFormat:@"Computer Score: %d", self.computerScore];
+self.tiesLabel.text = [[NSString alloc] initWithFormat:@"Ties: %d", self.ties];
+
+    
+
+}
+ 
 @end

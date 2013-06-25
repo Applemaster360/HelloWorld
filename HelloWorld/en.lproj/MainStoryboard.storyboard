@@ -62,10 +62,17 @@
                                     <action selector="buttonPressed:" destination="2" eventType="touchUpInside" id="vR4-Fr-eUt"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Fight!!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DE3-E8-OoG">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="145" id="ri8-sX-KSs"/>
-                                </constraints>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Rock" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrS-Ax-LBT">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Paper" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gN2-PF-BbC">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Scissors" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBR-W6-iLE">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -73,25 +80,31 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Ixf-fw-7N9" firstAttribute="top" secondItem="DIk-vz-UUi" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="0Qw-PX-KLA"/>
+                            <constraint firstItem="UBR-W6-iLE" firstAttribute="trailing" secondItem="4XN-9F-qs8" secondAttribute="trailing" type="default" id="3Ne-Hu-HuK"/>
                             <constraint firstItem="Ixf-fw-7N9" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="4Sa-gl-44t"/>
-                            <constraint firstItem="TGB-HH-0x6" firstAttribute="top" secondItem="3" secondAttribute="top" constant="36" id="5g4-He-bdp"/>
-                            <constraint firstItem="DE3-E8-OoG" firstAttribute="top" secondItem="3" secondAttribute="top" constant="223" id="B67-5w-hDg"/>
+                            <constraint firstItem="UBR-W6-iLE" firstAttribute="centerX" secondItem="gN2-PF-BbC" secondAttribute="centerX" type="default" id="5ud-wo-p9f"/>
+                            <constraint firstItem="TGB-HH-0x6" firstAttribute="top" secondItem="3" secondAttribute="top" constant="7" id="6bB-EQ-vuH"/>
+                            <constraint firstItem="gN2-PF-BbC" firstAttribute="top" secondItem="3" secondAttribute="top" constant="222" id="8z3-g7-Hxl"/>
                             <constraint firstItem="Ixf-fw-7N9" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="13" id="Eq1-9i-mKL"/>
-                            <constraint firstItem="DIk-vz-UUi" firstAttribute="top" secondItem="3" secondAttribute="top" constant="259" id="MEG-5B-QfK"/>
+                            <constraint firstItem="DIk-vz-UUi" firstAttribute="centerX" secondItem="4XN-9F-qs8" secondAttribute="centerX" type="default" id="P7f-Jy-8Qx"/>
                             <constraint firstItem="4XN-9F-qs8" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="Qmu-V3-LEV"/>
-                            <constraint firstItem="DIk-vz-UUi" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="cH0-s2-stP"/>
+                            <constraint firstItem="TGB-HH-0x6" firstAttribute="trailing" secondItem="DIk-vz-UUi" secondAttribute="trailing" type="default" id="cbg-Ct-Qjv"/>
                             <constraint firstAttribute="trailing" secondItem="sf0-Vq-Skd" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="dgD-he-UTM"/>
-                            <constraint firstItem="DE3-E8-OoG" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="115" id="hya-lh-fN3"/>
-                            <constraint firstItem="TGB-HH-0x6" firstAttribute="leading" secondItem="DIk-vz-UUi" secondAttribute="leading" type="default" id="j0E-tt-LzS"/>
-                            <constraint firstItem="DE3-E8-OoG" firstAttribute="leading" secondItem="4XN-9F-qs8" secondAttribute="leading" type="default" id="nCm-uA-Y2e"/>
-                            <constraint firstItem="TGB-HH-0x6" firstAttribute="trailing" secondItem="DIk-vz-UUi" secondAttribute="trailing" type="default" id="tmf-hQ-leZ"/>
+                            <constraint firstItem="UBR-W6-iLE" firstAttribute="top" secondItem="gN2-PF-BbC" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="fBE-di-wLO"/>
+                            <constraint firstItem="mrS-Ax-LBT" firstAttribute="top" secondItem="TGB-HH-0x6" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="jKa-3b-t8y"/>
+                            <constraint firstItem="gN2-PF-BbC" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="lA1-Rl-LBE"/>
+                            <constraint firstItem="TGB-HH-0x6" firstAttribute="leading" secondItem="DIk-vz-UUi" secondAttribute="leading" type="default" id="pfA-S5-fTC"/>
                             <constraint firstItem="sf0-Vq-Skd" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="uSo-Da-eTG"/>
+                            <constraint firstItem="mrS-Ax-LBT" firstAttribute="centerX" secondItem="TGB-HH-0x6" secondAttribute="centerX" type="default" id="yhz-7m-rXy"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="option" destination="DE3-E8-OoG" id="zem-EP-x1P"/>
+                        <outlet property="computerScoreLabel" destination="gN2-PF-BbC" id="5Mg-9Q-C6O"/>
                         <outlet property="player1Image" destination="DIk-vz-UUi" id="AR1-mC-qn8"/>
-                        <outlet property="player2Image" destination="DIk-vz-UUi" id="UGU-rE-kaG"/>
+                        <outlet property="player2Image" destination="TGB-HH-0x6" id="8xL-ho-gOS"/>
+                        <outlet property="playerScoreLabel" destination="mrS-Ax-LBT" id="RtL-Oz-Own"/>
+                        <outlet property="tiesLabel" destination="UBR-W6-iLE" id="a6m-9c-TgK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
@@ -110,9 +123,13 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
                 <relationship kind="action" name="buttonPressed:"/>
-                <relationship kind="outlet" name="option" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="computerScore" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="computerScoreLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="player1Image" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="player2Image" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="playerScoreLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ties" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="tiesLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
     </classes>
