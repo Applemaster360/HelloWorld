@@ -25,7 +25,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ixf-fw-7N9">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Rock ">
+                                <state key="normal" title="Rock">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -33,7 +33,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="rockButtonPressed:" destination="2" eventType="touchUpInside" id="3R4-9Z-3qD"/>
+                                    <action selector="buttonPressed:" destination="2" eventType="touchUpInside" id="jln-Ss-Cf9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4XN-9F-qs8">
@@ -46,7 +46,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="paperButtonPressed:" destination="2" eventType="touchUpInside" id="bhe-Gq-LvM"/>
+                                    <action selector="buttonPressed:" destination="2" eventType="touchUpInside" id="2bY-lj-yYJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sf0-Vq-Skd">
@@ -59,7 +59,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="scissorButtonPressed:" destination="2" eventType="touchUpInside" id="Zn8-XW-zJR"/>
+                                    <action selector="buttonPressed:" destination="2" eventType="touchUpInside" id="vR4-Fr-eUt"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Fight!!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DE3-E8-OoG">
@@ -102,6 +102,20 @@
         <image name="paper.jpeg" width="247" height="204"/>
         <image name="rock.jpeg" width="223" height="226"/>
     </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="buttonPressed:"/>
+                <relationship kind="outlet" name="option" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="player1Image" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="player2Image" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

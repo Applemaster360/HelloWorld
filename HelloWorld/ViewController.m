@@ -34,15 +34,33 @@
 }
  */
 
-- (IBAction)paperButtonPressed:(id)sender {
-     player1Image.image = [UIImage imageNamed:@"paper.jpeg"];
-    option.text = @"You chose paper!!"; 
-}
 
-- (IBAction)scissorButtonPressed:(id)sender {
+
+
+- (IBAction)buttonPressed:(id)sender {
+    UIButton *button = (UIButton *)sender;
+  
+    int playerChoice = 0;
+    int computerChoice = 0;
     
-    player1Image.image = [UIImage imageNamed:@"scissors.jpg"];
-    option.text = @"You chose scissors!!"; 
+    if ( [button.titleLabel.text isEqualToString:@"Rock"])
+    {
+        player1Image.image = [UIImage imageNamed:@"rock.jpeg"];
+        playerChoice = 0;
+    }
+    else if ([button.titleLabel.text isEqual:@"Paper"]){
+        player1Image.image = [UIImage imageNamed:@"paper.jpeg"];
+        playerChoice = 1; 
+        
+    }
+    else if ([button.titleLabel.text isEqual:@"Scissors"]){
+        player1Image.image = [UIImage imageNamed:@"Scissors.jpg"];
+        playerChoice = 2;
+        
+        
+    }
+    computerChoice = [self determineComputerAction];
+    NSLog(@"%d",computerChoice); 
 }
 
 - (void) gameOver:(int)winner{
@@ -62,8 +80,14 @@
 }
 
 - (int) determineComputerAction{
-    return arc4random()%4;
+    return arc4random()%3;
     
 }
 
+-(int) determineWinner:(int)player1 withComputer:(int)player2{
+    if ( (player1 == 0 && player2 == 2) || (player1 == 1 && player  ) )
+    {
+        
+    }
+}
 @end
