@@ -85,9 +85,10 @@
 }
 
 -(int) determineWinner:(int)player1 withComputer:(int)player2{
-    if ( (player1 == 0 && player2 == 2) || (player1 == 1 && player  ) )
+    if ( (player1 == 0 && player2 == 2) || (player1 == 1 && player2 == 0) || (player1== 2 && player2== 1) )
     {
-        
+        return 1; 
     }
+    
 }
 @end
